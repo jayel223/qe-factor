@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.main{
+    background: #2a2a2a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 231, 231);
+}
+.main h3{
+  color: rgb(59, 180, 35);
+  font-weight: lighter;
+}
+.solution{
+  display: none;
+}
+.error-container{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+h3.error{
+color: rgb(202, 60, 60);
+}
+input{
+    color: white;
+    outline: none;
+    font-size: 2rem;
+    background: none;
+    padding: 5px;
+    border: 0;
+}
+.buttons{
+  margin-top: 1rem;
+}
+button.solve{
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgb(170, 180, 35);
+  cursor: pointer;
+  margin-right: 1rem;
+}
+button.solve:hover{
+  color: rgb(240, 255, 27);
+}
+button.clear{
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgb(202, 60, 60);
+  cursor: pointer;
+}
+button.clear:hover{
+  color: rgb(255, 27, 27);
+}
+@media all and (max-width: 450px){
+  :root{
+    --font-size: 1.5rem;
+  }
+  .main{
+    font-size: var(--font-size);
+    display: block;
+    flex-direction: column;
+    align-items: none;
+    justify-content: none;
+    padding: 1rem;
+  }
+  input{
+      color: white;
+      outline: none;
+      font-size: var(--font-size);
+      background: none;
+      padding: 5px;
+      border: 0;
+  }
+  button.solve{
+    border: 0;
+    font-size: var(--font-size);
+    background: none;
+    color: rgb(170, 180, 35);
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  button.clear{
+    border: 0;
+    font-size: var(--font-size);
+    background: none;
+    color: rgb(202, 60, 60);
+    cursor: pointer;
+  }
+}
+@keyframes loading {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+}
